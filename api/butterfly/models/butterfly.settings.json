@@ -9,7 +9,7 @@
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "common_name": {
       "type": "string",
       "required": true
     },
@@ -18,14 +18,14 @@
       "required": true,
       "unique": true
     },
-    "About": {
+    "description": {
       "type": "richtext",
       "required": false
     },
-    "Conservation": {
+    "conservation_status": {
       "type": "richtext"
     },
-    "Images": {
+    "gallery": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -36,20 +36,20 @@
       "required": true
     },
     "details": {
-      "via": "butterflies",
-      "collection": "details"
+      "collection": "details",
+      "via": "butterflies"
     },
     "regions": {
       "via": "butterflies",
       "collection": "region"
     },
     "colors": {
-      "via": "butterflies",
-      "collection": "color"
+      "collection": "color",
+      "via": "butterflies"
     },
     "references": {
-      "via": "butterfly",
-      "collection": "reference"
+      "collection": "reference",
+      "via": "butterfly"
     },
     "sizes": {
       "via": "butterflies",

@@ -21,8 +21,8 @@
       "type": "string"
     },
     "butterfly": {
-      "model": "butterfly",
-      "via": "references"
+      "via": "references",
+      "model": "butterfly"
     }
   }
 }

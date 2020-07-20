@@ -15,8 +15,8 @@
       "unique": true
     },
     "butterflies": {
-      "collection": "butterfly",
       "via": "colors",
+      "collection": "butterfly",
       "dominant": true
     }
   }

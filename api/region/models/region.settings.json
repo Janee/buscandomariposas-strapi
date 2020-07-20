@@ -9,7 +9,7 @@
     "timestamps": true
   },
   "attributes": {
-    "State_name": {
+    "state": {
       "type": "string"
     },
     "butterflies": {

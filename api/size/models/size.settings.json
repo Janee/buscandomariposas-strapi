@@ -9,7 +9,7 @@
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "short_description": {
       "type": "string",
       "required": true,
       "unique": true

@@ -13,8 +13,8 @@
       "type": "string"
     },
     "butterflies": {
-      "collection": "butterfly",
       "via": "details",
+      "collection": "butterfly",
       "dominant": true
     }
   }
