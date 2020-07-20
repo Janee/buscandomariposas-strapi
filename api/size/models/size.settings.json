@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sizes",
+  "info": {
+    "name": "Size"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "minimal_size": {
+      "type": "decimal",
+      "required": true,
+      "unique": true
+    },
+    "maximal_size": {
+      "type": "decimal",
+      "required": true,
+      "unique": true
+    },
+    "butterflies": {
+      "collection": "butterfly",
+      "via": "sizes",
+      "dominant": true
+    }
+  }
+}

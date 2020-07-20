@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "regions",
+  "info": {
+    "name": "Region"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "State_name": {
+      "type": "string"
+    },
+    "butterflies": {
+      "collection": "butterfly",
+      "via": "regions",
+      "dominant": true
+    }
+  }
+}

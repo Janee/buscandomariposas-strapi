@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "butterflies",
+  "info": {
+    "name": "Butterfly"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "scientific_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "About": {
+      "type": "richtext",
+      "required": false
+    },
+    "Conservation": {
+      "type": "richtext"
+    },
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "details": {
+      "via": "butterflies",
+      "collection": "details"
+    },
+    "regions": {
+      "via": "butterflies",
+      "collection": "region"
+    },
+    "colors": {
+      "via": "butterflies",
+      "collection": "color"
+    },
+    "references": {
+      "via": "butterfly",
+      "collection": "reference"
+    },
+    "sizes": {
+      "via": "butterflies",
+      "collection": "size"
+    }
+  }
+}

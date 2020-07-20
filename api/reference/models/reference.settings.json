@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "references",
+  "info": {
+    "name": "Reference"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "author_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "book_reference": {
+      "type": "string"
+    },
+    "butterfly": {
+      "model": "butterfly",
+      "via": "references"
+    }
+  }
+}

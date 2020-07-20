@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/butterflies",
+      "handler": "butterfly.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/butterflies/count",
+      "handler": "butterfly.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/butterflies/:id",
+      "handler": "butterfly.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/butterflies",
+      "handler": "butterfly.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/butterflies/:id",
+      "handler": "butterfly.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/butterflies/:id",
+      "handler": "butterfly.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
